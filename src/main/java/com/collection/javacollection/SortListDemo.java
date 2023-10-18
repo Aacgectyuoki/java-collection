@@ -1,5 +1,7 @@
 package com.collection.javacollection;
 
+import com.collection.javacollection.lambda.Book;
+
 import java.util.*;
 
 public class SortListDemo {
@@ -41,6 +43,10 @@ public class SortListDemo {
         //Collections.sort(students, new StudentComparator());
         students.sort((s1, s2) -> (s2.getAge() - s1.getAge())); // descending order
         System.out.println(students);
+
+        List<Book> books = Database.getBooks();
+        books.sort((b1, b2) -> (b1.getId() - b2.getId()));
+        System.out.println(books);
 
     }
 

@@ -26,8 +26,11 @@ public class Database {
         return students;
     }
 
-    public List<Book> getBooks() {
+    public static List<Book> getBooks() {
         List<Book> book = new ArrayList<>();
+        book.add(new Book(1, "Atomic Habits", 322));
+        book.add(new Book(2, "Cracking The Coding Interview", 708));
         return book;
     }
+
 }
